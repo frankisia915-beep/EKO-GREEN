@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKO-GREEN | Movilidad Eléctrica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto',sans-serif; }
+    html, body { width:100%; height:100%; overflow-x:hidden; background:white; color:#222; }
+
+    /* Animación */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header { text-align:center; padding:2rem 1rem; }
+    header img { width:150px; margin-bottom:1rem; }
+    header h1 { font-size:3rem; color:#009966; text-shadow:0 0 3px rgba(0,255,153,0.3); margin-bottom:0.5rem; }
+    header p { font-size:1.3rem; color:#555; }
+
+    .products { 
+      display:grid; 
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
+      gap:2rem; 
+      padding:3rem 2rem; 
+      max-width:1200px; 
+      margin:0 auto; 
+    }
+
+    .product-card { 
+      background:#fafafa; 
+      border-radius:1rem; 
+      text-align:center; 
+      padding:1rem; 
+      transition: transform 0.3s, box-shadow 0.3s; 
+      border:1px solid #ddd; 
+    }
+
+    .product-card:hover { transform: scale(1.03); box-shadow:0 0 8px rgba(0,255,153,0.3); }
+    .product-card img { width:100%; border-radius:0.5rem; transition: transform 0.5s; }
+    .product-card:hover img { transform: scale(1.05); }
+    .product-card h3 { color:#009966; margin:0.5rem 0; }
+    .product-card p { color:#444; font-size:0.9rem; margin-bottom:0.5rem; }
+    .product-card .price { color:#009966; font-weight:bold; margin-bottom:1rem; font-size:1.1rem; }
+    .product-card .km { color:#009966; font-weight:bold; font-size:1rem; margin-bottom:0.5rem; }
+
+    .product-card button { 
+      padding:0.8rem 2rem; 
+      background:#00b377; 
+      color:#fff; 
+      border:none; 
+      border-radius:50px; 
+      cursor:pointer; 
+      font-weight:bold; 
+      box-shadow:0 0 6px rgba(0,255,153,0.3);
+      transition:0.3s; 
+    }
+    .product-card button:hover { background:#009966; box-shadow:0 0 8px rgba(0,255,153,0.4); }
+
+    footer { 
+      text-align:center; 
+      padding:0.5rem 1rem; 
+      background:#f5f5f5; 
+      width:100%; 
+      position:fixed; 
+      bottom:0; 
+      left:0; 
+      border-top:1px solid #ccc;
+    }
+    footer p { font-size:0.75rem; color:#009966; }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- SECCIÓN HERO CON VIDEO -->
+  <section class="relative w-full h-screen overflow-hidden flex items-center justify-center text-center">
+    <!-- Video de fondo -->
+    <video autoplay loop muted playsinline preload="auto"
+      class="absolute inset-0 w-full h-full object-cover">
+      <source src="bik5q2-h264-hd.mp4" type="video/mp4">
+      Tu navegador no soporta el video HTML5.
+    </video>
+
+    <!-- Capa blanca translúcida -->
+    <div class="absolute inset-0 bg-white bg-opacity-20"></div>
+
+    <!-- Contenido sobre el video -->
+    <div class="relative z-10 px-6 animate-fadeInUp" style="animation: fadeInUp 1s ease forwards;">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4 text-green-100 drop-shadow-lg">EKO-GREEN</h1>
+      <p class="text-lg md:text-2xl mb-8 text-gray-800 text-green-100">
+        Movilidad eléctrica que impulsa un futuro más verde
+      </p>
+     <div class="product-card">
+        <div class="km">
+          <h1>Kilómetros recorridos por🌎</h1>
+          <h2>EKO-GREEN: <span class="km-counter">0</span> km ⚡</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EKO-GREEN | Movilidad eléctrica</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Animación suave de aparición */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+
+
+
+
+<body>
+
+
+
+<section class="products">
+  <div class="product-card">
+    <img src="mototaxi1.png" alt="Trimoto Electrico LITIO">
+    <h3>Trimoto Eléctrico LITIO</h3>
+    <p>Compacta, eficiente y lista para cualquier trayecto</p>
+    <div class="price">S/ 4,500</div>
+   
+<p>✅ Potencia motor (Watts Nominal) 800W Potencia Motor (Watts Máximo) 1200W</p>
+<p>✅ Batería LITIO ⚡/ Extraíble de muchos mas ciclos de carga.</p> 
+<p>✅Pantalla digital LCD.</p> 
+<p>✅ Suspensión delantera y trasera / Telescópica doble amortiguador.</p> 
+<p>✅ Freno delantero y trasero / Tambor y tambor.</p>
+<p>✅ Tiempo de carga de 4 a 5 hrs aprox.</p> 
+<p>✅ Autonomía de 50 a 60 km .</p>
+<p>✅ Carga máxima 210 Kg</p>
+<p>✅ Aro de 10, es más Alta para los terrenos complicados.</p>
+<p>✅Llanta delantera y trasera / sin cámara.</p>
+<p>🚫 No requiere placa ni licencia</p>
+
+
+     
+
+    <a href="https://wa.me/51963058374?text=Hola,%20quiero%20más%20info%20de%20Trimoto%20LITIO" target="_blank">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="mototaxi2.png" alt="Trimoto Electrico JP-3">
+    <h3>Trimoto Eléctrico JP-3</h3>
+    <p>Compacta, eficiente y lista para cualquier trayecto</p>
+    <div class="price">S/ 3,800</div>
+ 
+    <p>✅ Potencia motor (Watts Nominal) 1200W Potencia Motor (Watts Máximo) 1700W</p>
+<p>✅ Conexión a Bluetooth</p>
+ <p>✅ Batería Tecnologia plomo grafeno </p> 
+<p>✅Pantalla digital LCD.</p> 
+<p>✅ Suspensión delantera y trasera / Telescópica doble amortiguador.</p> 
+<p>✅ Freno delantero y trasero / disco y tambor.</p>
+<p>✅ Tiempo de carga de 5 a 6 hrs aprox.</p>
+ <p>✅ Autonomía de 50 a 60 km .</p> 
+<p>✅ Carga máxima 200 Kg</p>
+ <p>✅ Aro de 10, es más Alta para los terrenos complicados.</p>
+<p>✅Llanta delantera y trasera / sin cámara.</p>
+<p>🚫 No requiere placa ni licencia</p>
+
+
+    <a href="https://wa.me/51963058374?text=Hola,%20quiero%20comprar%20Trimoto%20GE-3" target="_blank">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+  <div class="product-card">
+    <img src="mototaxi3.png" alt="Trimoto Family">
+    <h3>Trimoto Eléctrico Family</h3>
+    <p>Compacta, eficiente y lista para cualquier trayecto</p>
+    <div class="price">S/ 3,250</div>
+
+   <p>✅ Potencia motor (Watts Nominal) 800W Potencia Motor (Watts Máximo) 1000W</p> 
+<p>✅ Bateria Tecnologia plomo acido</p> 
+<p>✅ Pantalla digital LCD.</p> 
+<p>✅ Suspensión delantera y trasera / Telescópica doble amortiguador.</p> 
+<p>✅ Freno delantero y trasero / tambor y tambor.</p>
+<p>✅ Tiempo de carga de 5 a 6 hrs aprox.</p>
+<p>✅ Autonomia de 40 a 50 km</p> 
+<p>✅ Carga máxima 180 Kg</p>
+<p>✅ Aro de 10, es más Alta para los terrenos complicados.</p>
+<p>✅Llanta delantera y trasera / sin cámara.</p>
+ <p>🚫NO requiere placa ni licencia.</p> 
+
+    <a href="https://wa.me/51963058374?text=Hola,%20quiero%20comprar%20Trimoto%20Family" target="_blank">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+<div class="product-card">
+    <img src="mototaxi4.png" alt="Trimoto Family">
+    <h3>Bicimoto electrica VMP urbano </h3>
+    <p>Compacta y perfectamente diseñada para la ciudad.</p>
+    <div class="price">S/ 2,500</div>
+ 
+    <p>✅  Potencia motor (Watts Nominal) 500W Potencia Motor (Watts Máximo) 800W</p>
+<p>✅ Tarjeta NFC</p>
+    <p>✅ Bateria Tecnologia plomo acido</p>
+<p>✅Pantalla digital LCD.</p> 
+<p>✅ Suspensión delantera y trasera / Telescópica doble amortiguador.</p> 
+<p>✅ Freno delantero y trasero / tambor y tambor.</p>
+<p>✅ Tiempo de carga de 5 a 6 hrs aprox.</p>
+    <p>✅ Autonomia de 50 a 60 km</p>
+    <p>✅ Carga máxima 180 Kg</p>
+<p>✅ Aro de 10</p>
+<p>✅Llanta delantera y trasera / sin cámara.</p>
+ <p>🚫NO requiere placa ni licencia.</p> 
+
+    <a href="https://wa.me/51963058374?text=Hola,%20quiero%20comprar%20Trimoto%20Family" target="_blank">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+<div class="product-card">
+    <img src="mototaxi5.png" alt="Trimoto Family">
+    <h3>Trimoto Eléctrico Family</h3>
+    <p>Compacta, ideal para ciudad</p>
+    <div class="price">S/ 3,250</div>
+<div class="km">Kilómetros recorridos: <span class="km-counter">0</span> km</div>  
+    <p>✅ Motor: 800W nominal / 1000W máximo</p>
+    <p>✅ Batería de plomo ácido</p>
+    <p>✅ Autonomía: 50 km / Carga máxima 150 Kg</p>
+    <p>🚫 No requiere placa ni licencia</p>
+    <a href="https://wa.me/519XXXXXXXX?text=Hola,%20quiero%20comprar%20Trimoto%20Family" target="_blank">
+      <button>Comprar</button>
+    </a>
+  </div>
+
+
+
+</section>
+
+<footer>
+  <p>2025 EKO-GREEN | Todos los derechos son reservados.</p>
+</footer>
+
+<script>
+  // Contador de kilómetros
+  document.querySelectorAll('.km-counter').forEach(el=>{
+    let km = 0;
+    const maxKm = 350452 + Math.floor(Math.random()*150);
+    setInterval(()=>{
+      if(km < maxKm){
+        km += Math.floor(Math.random()*5);
+        if(km>maxKm) km=maxKm;
+        el.textContent = km;
+      }
+    },150);
+  });
+</script>
+
+</body>
+</html>

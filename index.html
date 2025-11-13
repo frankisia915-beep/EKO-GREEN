@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenido | EKO-GREEN</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .logo {
+    width: 180px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInLogo 2.5s ease forwards;
+  }
+
+  h1 {
+    color: #00b377;
+    font-size: 2.2rem;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 2s ease forwards 1.5s;
+  }
+
+  p {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 2s ease forwards 2.2s;
+  }
+
+  .bubble {
+    position: absolute;
+    background: rgba(0, 179, 119, 0.15);
+    border-radius: 50%;
+    animation: rise 15s infinite ease-in;
+    bottom: -150px;
+  }
+
+  @keyframes fadeInLogo { to { opacity: 1; transform: scale(1); } }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  @keyframes rise { 0% { transform: translateY(0) scale(1); opacity: 0.8; } 100% { transform: translateY(-1200px) scale(1.5); opacity: 0; } }
+  .fade-out { animation: fadeOut 1s ease forwards; }
+  @keyframes fadeOut { to { opacity: 0; transform: scale(1.1); } }
+</style>
+</head>
+<body>
+
+<div class="container" id="welcome">
+  <img src="logo.png" alt="Logo EKO-GREEN" class="logo">
+  <h1>Bienvenido a EKO-GREEN</h1>
+  <p>Movilidad eléctrica que impulsa un futuro más verde</p>
+
+  <div class="bubble" style="width:40px; height:40px; left:10%; animation-delay:0s;"></div>
+  <div class="bubble" style="width:25px; height:25px; left:30%; animation-delay:2s;"></div>
+  <div class="bubble" style="width:50px; height:50px; left:60%; animation-delay:4s;"></div>
+  <div class="bubble" style="width:35px; height:35px; left:80%; animation-delay:1s;"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Espera 1 segundo antes de iniciar la secuencia
+  setTimeout(() => {
+    const welcome = document.getElementById('welcome');
+    if (welcome) {
+      welcome.classList.add('fade-out');
+      // Redirige después de 1s más
+      setTimeout(() => {
+        window.location.href = "eko.html";
+      }, 1000);
+    }
+  }, 9000); // 5 segundos de bienvenida
+});
+</script>
+
+</body>
+</html>
